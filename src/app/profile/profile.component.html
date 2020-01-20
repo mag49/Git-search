@@ -9,11 +9,24 @@
 </div>
 <div class="col-sm-5">
     <ul class="list-group">
-        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+            <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+        <li class="list-group-item" *ngIf="profile.email"><a href="emailto:{{profile.email}}">{{profile.email}}</a></li>
+        <li class="list-group-item" *ngIf="profile.telephone">{{profile.telephone}}</li>
+        <li class="list-group-item" *ngIf="profile.hirelable">Available for hire</li>
     </ul>
 </div>
+    <div class="col-sm-4">
+        <div>
+            <p>
+                <span class="label label-default">{{profile.followers}} Followers</span>
+                <span class="label label-primary">Following{{profile.followers}} </span>
+                <span class="label label-success">{{profile.public_gists}} Public gists</span>
+                <span class="label label-info">{{profile.public_repos}} Public public_repos</span>
+            </p>
+            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on github</a></p>
+        </div>
+
+    </div>
 </div>
 </div>
 </div>
