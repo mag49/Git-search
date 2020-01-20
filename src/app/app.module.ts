@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpModule} from '@angular/http';
-import {formsModule} from'@angular/forms';
-import {profileService} from './services/profile.service';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from'@angular/forms';
+import {ProfileService} from '././services/profile.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,11 +16,11 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    FormsModule;
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [profileService],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
