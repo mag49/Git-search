@@ -1,3 +1,8 @@
+<form action="">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search git users with user name">
+    </div>
+</form>
 <div *ngIf="profile">
 <div class="panel-heading">
 {{profile.name}} <small>({{profile.login}})</small>
@@ -32,6 +37,7 @@
                 <p>
                     {{repo.name}} <a href="{{repo.html_url}}" class="btn btn-warning btn-sm">View this project on github</a>
                 </p>
+                <p>{{repo.description}}</p>
             </div>
 
         </div>
