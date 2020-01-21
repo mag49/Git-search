@@ -25,24 +25,29 @@
             <p>
                 <span class="label label-default">{{profile.followers}} Followers</span><br>
                 <span class="label label-primary">Following{{profile.followers}} </span><br>
-                <span class="label label-success">{{profile.public_gists}} Public gists</span><br>
+                <span class="label label-success">{{profile.public_gists}} Public gists</span>
                 <span class="label label-info">{{profile.public_repos}} Public public_repos</span>
             </p>
             <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile on github</a></p>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Repos</h3>
-                </div>
-                <div class="panel-body" *ngFor='let repo of repos'>
-                <p>
-                    {{repo.name}} <a href="{{repo.html_url}}" class="btn btn-warning">View this project on github</a>
-                </p>
-                <p>{{repo.description}}</p>
-            </div>
-
-        </div>
-
+          
     </div>
 </div>
+</div>
+</div>
+<div class="container">
+<div class="panel panel-default">
+               
+        <div class="panel-heading">
+            <h3 class="card-tittle">Repos</h3>
+        </div>
+        <div class="card" *ngFor='let repo of repos'>
+            <div class="card-body">
+        <p>
+            {{repo.name}} <a href="{{repo.html_url}}" class="btn btn-warning">View this project on github</a>
+        </p>
+        <p>{{repo.description}}</p>
+    </div>
+    </div>
+
 </div>
 </div>
