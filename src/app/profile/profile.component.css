@@ -2,8 +2,14 @@
 .container{
     background-color: gray;
 }
+.card{
+    margin-left: 5px;
+    margin-right:500px;
+}
 
-
+h3{
+    color:white;
+}
 body{
-    padding-top:50px;
+    padding-top:70px;
 }
