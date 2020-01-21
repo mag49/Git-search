@@ -19,6 +19,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:3301/`. The app w
 1. Angular
 2.Bootstrap
 
+## Code Badge
 [![codebeat badge](https://codebeat.co/badges/4a48a87a-3b33-45aa-bd5f-efdb0d901846)](https://codebeat.co/projects/github-com-mag49-git-search-master)
 
 ## Code scaffolding
