@@ -1,4 +1,4 @@
-## GitSearch
+## Git-search
 
 ## By Margaret Ng'ethe
 
